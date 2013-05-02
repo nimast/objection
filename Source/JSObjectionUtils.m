@@ -140,6 +140,10 @@ static void InjectDependenciesIntoProperties(JSObjectionInjector *injector, Clas
     }
 }
 
+static NSString * ProtocolKey(Protocol *aProtocol) {
+    return [NSString stringWithFormat:@"<%@>", NSStringFromProtocol(aProtocol)];
+}
+
 const struct JSObjectionUtils JSObjectionUtils = {
     .findClassOrProtocolForProperty = FindClassOrProtocolForProperty,
     .propertyForClass = GetProperty,
@@ -147,5 +151,6 @@ const struct JSObjectionUtils JSObjectionUtils = {
     .buildInitializer = BuildInitializer,
     .transformVariadicArgsToArray = TransformVariadicArgsToArray,
     .buildObjectWithInitializer = BuildObjectWithInitializer,
-    .injectDependenciesIntoProperties = InjectDependenciesIntoProperties
+    .injectDependenciesIntoProperties = InjectDependenciesIntoProperties,
+    .protocolKey = ProtocolKey
 };

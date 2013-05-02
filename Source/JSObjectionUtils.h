@@ -24,4 +24,5 @@ extern const struct JSObjectionUtils {
     NSArray* (*transformVariadicArgsToArray)(va_list va_arguments);
     id (*buildObjectWithInitializer)(Class klass, SEL initializer, NSArray *arguments);
     void (*injectDependenciesIntoProperties)(JSObjectionInjector *injector, Class klass, id object);
+    NSString * (*protocolKey)(Protocol *aProtocol);
 } JSObjectionUtils;

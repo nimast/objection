@@ -68,11 +68,10 @@
 		44FC0E9116B6377D0050D616 /* KWFailure.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F982C8216A802920030A0B1 /* KWFailure.h */; };
 		44FC0E9216B6377D0050D616 /* KWFormatter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F982C8416A802920030A0B1 /* KWFormatter.h */; };
 		44FC0E9316B6377D0050D616 /* KWFutureObject.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F982C8616A802920030A0B1 /* KWFutureObject.h */; };
-		44FC0E9416B6377D0050D616 /* KWHamcrestMatcher.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F982C8816A802920030A0B1 /* KWHamcrestMatcher.h */; };
-		44FC0E9516B6377D0050D616 /* KWHamrestMatchingAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F982C8A16A802920030A0B1 /* KWHamrestMatchingAdditions.h */; };
+		44FC0E9416B6377D0050D616 /* KWGenericMatcher.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F982C8816A802920030A0B1 /* KWGenericMatcher.h */; };
+		44FC0E9516B6377D0050D616 /* KWGenericMatchingAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F982C8A16A802920030A0B1 /* KWGenericMatchingAdditions.h */; };
 		44FC0E9616B6377D0050D616 /* KWHaveMatcher.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F982C8C16A802920030A0B1 /* KWHaveMatcher.h */; };
 		44FC0E9716B6377D0050D616 /* KWHaveValueMatcher.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F982C8E16A802920030A0B1 /* KWHaveValueMatcher.h */; };
-		44FC0E9816B6377D0050D616 /* KWHCMatcher.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F982C9016A802920030A0B1 /* KWHCMatcher.h */; };
 		44FC0E9916B6377D0050D616 /* KWInequalityMatcher.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F982C9116A802920030A0B1 /* KWInequalityMatcher.h */; };
 		44FC0E9A16B6377D0050D616 /* KWIntercept.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F982C9316A802920030A0B1 /* KWIntercept.h */; };
 		44FC0E9B16B6377D0050D616 /* KWInvocationCapturer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F982C9516A802920030A0B1 /* KWInvocationCapturer.h */; };
@@ -564,11 +563,10 @@
 				44FC0E9116B6377D0050D616 /* KWFailure.h in CopyFiles */,
 				44FC0E9216B6377D0050D616 /* KWFormatter.h in CopyFiles */,
 				44FC0E9316B6377D0050D616 /* KWFutureObject.h in CopyFiles */,
-				44FC0E9416B6377D0050D616 /* KWHamcrestMatcher.h in CopyFiles */,
-				44FC0E9516B6377D0050D616 /* KWHamrestMatchingAdditions.h in CopyFiles */,
+				44FC0E9416B6377D0050D616 /* KWGenericMatcher.h in CopyFiles */,
+				44FC0E9516B6377D0050D616 /* KWGenericMatchingAdditions.h in CopyFiles */,
 				44FC0E9616B6377D0050D616 /* KWHaveMatcher.h in CopyFiles */,
 				44FC0E9716B6377D0050D616 /* KWHaveValueMatcher.h in CopyFiles */,
-				44FC0E9816B6377D0050D616 /* KWHCMatcher.h in CopyFiles */,
 				44FC0E9916B6377D0050D616 /* KWInequalityMatcher.h in CopyFiles */,
 				44FC0E9A16B6377D0050D616 /* KWIntercept.h in CopyFiles */,
 				44FC0E9B16B6377D0050D616 /* KWInvocationCapturer.h in CopyFiles */,

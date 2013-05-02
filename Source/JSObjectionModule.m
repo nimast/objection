@@ -3,6 +3,7 @@
 #import "JSObjectionProviderEntry.h"
 #import "JSObjectionInjectorEntry.h"
 #import <objc/runtime.h>
+#import <Objection/JSObjectionUtils.h>
 #import "JSObjectionInjector.h"
 
 @interface __JSClassProvider : NSObject<JSObjectionProvider>
@@ -136,7 +137,7 @@
 }
 
 - (NSString *)protocolKey:(Protocol *)aProtocol {
-    return [NSString stringWithFormat:@"<%@>", NSStringFromProtocol(aProtocol)]; 
+    return JSObjectionUtils.protocolKey(aProtocol);
 }
 
 @end

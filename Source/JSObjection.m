@@ -1,5 +1,7 @@
 #import "JSObjection.h"
 #import <pthread.h>
+#import <Objection/JSObjectionBindingEntry.h>
+#import <Objection/JSObjectionUtils.h>
 #import "JSObjectionInjectorEntry.h"
 
 static NSMutableDictionary *gObjectionContext;
@@ -74,6 +76,14 @@ static JSObjectionInjector *gGlobalInjector;
     if (theClass && [gObjectionContext objectForKey:NSStringFromClass(theClass)] == nil) {
         [gObjectionContext setObject:[JSObjectionInjectorEntry entryWithClass:theClass scope:scope] forKey:NSStringFromClass(theClass)];
     } 
+    pthread_mutex_unlock(&gObjectionMutex);
+}
+
++ (void) bindInstance:(id)instance toProtocol:(Protocol *)aProtocol {
+    pthread_mutex_lock(&gObjectionMutex);
+    NSString *key = JSObjectionUtils.protocolKey(aProtocol);
+    JSObjectionBindingEntry *entry = [[[JSObjectionBindingEntry alloc] initWithObject:instance] autorelease];
+    [gObjectionContext setObject:entry forKey:key];
     pthread_mutex_unlock(&gObjectionMutex);
 }
 
