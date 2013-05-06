@@ -10,7 +10,9 @@
 + (JSObjectionInjector *)createInjector:(JSObjectionModule *)module;
 + (JSObjectionInjector *)createInjector;
 + (void)registerClass:(Class)theClass scope:(JSObjectionScope)scope;
++ (void)bindInstance:(id)instance toProtocol:(Protocol *)aProtocol;
 + (void)setDefaultInjector:(JSObjectionInjector *)anInjector;
 + (JSObjectionInjector *)defaultInjector;
+
 + (void)reset;
 @end
